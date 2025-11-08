@@ -5,15 +5,17 @@ function App() {
   let [counter, setcounter] = useState(10) // usestate hook
 
   const addvalue = () => {
-    if (counter < 20) {
-      setcounter(counter + 1)
-    }
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+    setcounter(prevCounter => prevCounter + 1)
+
   }
 
   const minusvalue = () => {
-    if (counter > 0) {
-      setcounter(counter - 1)
-    }
+    setcounter(counter => counter - 1)
+    setcounter(counter => counter - 1)
+    setcounter(counter => counter - 1)
+    setcounter(counter => counter - 1)
   }
 
 
