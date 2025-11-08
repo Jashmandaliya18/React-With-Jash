@@ -1,5 +1,9 @@
 
-function Card() {
+function Card(props) {
+    console.log("Props Username: ", props.userName);
+    console.log("Props Object: ", props.someObj);
+    console.log("Props Array: ", props.someArr);
+
     return (
         <div className="flex flex-col items-center p-7 rounded-2xl">
             <div>
